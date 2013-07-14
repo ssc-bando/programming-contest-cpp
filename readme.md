@@ -18,7 +18,9 @@
 
 1. githubにログインし、どこかのレポジトリにアクセス
    * 例えば https://github.com/ssc-bando/programming-contest-cpp
-1. 画面右上「★Start」をクリック
+1. 画面右上「★Star」をクリック
 1. 数字が増えてボタンが「★Unstar」になればOK
+1. スターを辞める場合は再度同じボタンをクリック
+   * ボタンが「★Star」に戻ればOK
 
 
