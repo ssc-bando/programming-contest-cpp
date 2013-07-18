@@ -3,7 +3,8 @@
 
 各投稿済みソースのレポジトリURLです。
 
-*
+* No.1
+   * https://github.com/ssc-bando/programming-contest-cpp-No1/blob/master/fizzbuzz.cpp
 
 
 ## githubアカウントの作成
