@@ -5,6 +5,8 @@
 
 * No.1
    * https://github.com/ssc-bando/programming-contest-cpp-No1/blob/master/fizzbuzz.cpp
+* No.2
+   * https://github.com/ssc-bando/programming-contest-cpp-No2/blob/master/fizzbuzz.cpp
 
 
 ## githubアカウントの作成
