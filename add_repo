@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+TARGET_NUM = ARGV[0]
+
+system "git remote add #{TARGET_NUM} git@github.com-ssc-bando:ssc-bando/programming-contest-cpp-No#{TARGET_NUM}.git"
+system "git checkout master"
+system "git checkout -b test_#{TARGET_NUM}"
+system "git fetch #{TARGET_NUM}"
+system "git merge --no-ff #{TARGET_NUM}/master"
+system "git checkout master"
+
