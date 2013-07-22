@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require 'open3'
+
+MAX = 2
+
+result = Hash.new
+for i in 1..MAX
+  system "git checkout test_#{i}"
+  system "make clean"
+  system "make"
+  stdin, stdout, stderr = *Open3.popen3('make calc')
+  stdout.readlines.each{|l| result.merge!({i => l.split(' ')[0].to_f}) if l.match /.*sec/}
+end
+
+system "git checkout master"
+puts "> original >>>>>>>>>>>>>"
+p result
+puts "> sorted  >>>>>>>>>>>>>"
+result.sort{|a, b| a[1] <=> b[1]}.each{|k, v| puts "No.#{k}, #{v}"}
