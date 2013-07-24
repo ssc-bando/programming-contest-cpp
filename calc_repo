@@ -2,7 +2,7 @@
 
 require 'open3'
 
-MAX = 2
+MAX = 3
 
 result = Hash.new
 for i in 1..MAX
@@ -18,3 +18,4 @@ puts "> original >>>>>>>>>>>>>"
 p result
 puts "> sorted  >>>>>>>>>>>>>"
 result.sort{|a, b| a[1] <=> b[1]}.each{|k, v| puts "No.#{k}, #{v}"}
+
