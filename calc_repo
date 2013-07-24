@@ -18,3 +18,4 @@ puts "> original >>>>>>>>>>>>>"
 p result
 puts "> sorted  >>>>>>>>>>>>>"
 result.sort{|a, b| a[1] <=> b[1]}.each{|k, v| puts "No.#{k}, #{v}"}
+
