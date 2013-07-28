@@ -2,7 +2,7 @@
 
 require 'open3'
 
-MAX = 3
+MAX = ARGV[0].to_i
 
 result = Hash.new
 for i in 1..MAX
